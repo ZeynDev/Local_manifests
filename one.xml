@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <remote name="zyn"
+                fetch="https://github.com/ZeynDev" />
+
+        <remote name="XS"
+                fetch="https://github.com/XenStuff" />
+
+        <remote name="lab"
+                fetch="https://github.com/xenxynon-lab-404"
+                revision="refs/heads/shinka" />
+
+        <remote name="chuck"
+                fetch="https://github.com/ChuckProjekt"/>
+
+        <remote name="mi439"
+                fetch="https://github.com/mi-sdm439" />
+
+        <remote name="clang"
+                fetch="https://github.com/kdrag0n" />
+ 
+
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
+
+
+        <!-- Trees -->
+        <project path="device/xiaomi/Mi439" name="android_device_xiaomi_mi439" remote="XS" revision="lineage-19.1"/>
+        <project path="device/xiaomi/sdm439-common" name="device_xiaomi_sdm439-common" remote="XS" revision="12-R-CAF"/>
+        <project path="vendor/xiaomi/mi439" name="vendor_xiaomi_mi439" remote="lab" revision="12.1-unified-r"/>
+        <project path="vendor/xiaomi/sdm439-common" name="vendor_xiaomi_sdm439-common" remote="chuck" revision="12-R-CAF"/>
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
+
+        <!-- hals --> 
+        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="lab" revision="9.6.2" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="chuck" revision="9.6.2" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="lab" revision="9.6.2" />
+        <remove-project name="platform/vendor/qcom-opensource/usb" />
+
+
+        <!-- stuff-->
+        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
+        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
+        <project path="vendor/lawnchair" name="vendor_lawnchair" remote="lab" />
+
+        <!-- kernel -->
+        <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi439" revision="a12/main" clone-depth="1" />
+        
+
+</manifest>
