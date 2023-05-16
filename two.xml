@@ -32,7 +32,7 @@
   <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="kt" revision="a12/main"  clone-depth="1"/>
 
 <!-- Device Trees -->
- <project path="device/xiaomi/Mi439" name="android_device_xiaomi_Mi439" remote="zyn" revision="a13/rom/miku"/>
+ <project path="device/xiaomi/Mi439" name="android_device_xiaomi_Mi439" remote="zyn" revision="a13/aosp"/>
   <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common" remote="randomas" revision="12.1"/>
   
 <!-- Vendor Trees -->
