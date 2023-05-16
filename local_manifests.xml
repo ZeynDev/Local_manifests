@@ -3,13 +3,14 @@
 
     <!-- Remotes -->
     <remote name="hals" fetch="https://github.com/LineageOS" />
+    <remote name="zyn" fetch="http://github.com/ZeynDev" />
     <remote name="fm" fetch="https://github.com/ArrowOS" />
     <remote name="stuff" fetch="https://github.com/mi-thorium" />
     <remote name="evox439" fetch="https://github.com/evolution-mi439" />   
     <remote name="kernel" fetch="https://github.com/mi-sdm439" />
     
     <!-- Device Trees -->
-    <project path="device/xiaomi/Mi439" name="android_device_xiaomi_Mi439" remote="evox439" revision="tiramisu" />
+    <project path="device/xiaomi/Mi439" name="android_device_xiaomi_Mi439" remote="zyn" revision="a13/evox" />
     <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common" remote="evox439" revision="tiramisu" />
  
     <!-- Kernels -->
